@@ -1,2 +1,0 @@
-sdouglas.github.com
-===================

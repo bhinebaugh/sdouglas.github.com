@@ -59,7 +59,7 @@ html, body {height: 100%;}
 /*Opera Fix - is this still necessary? */
 body:before { content:""; height:100%; float:left; width:0; margin-top:-32767px;}
 
-#left-background { background: url("/assets/images/01_research_left_100.png") no-repeat top left transparent ; }
+#left-background { background: url("/assets/images/01_research_left_50.png") no-repeat top left transparent ; }
 #right-background { background: url("/assets/images/artwork_research_1000.png") no-repeat top left transparent ; }
 
 .contact {

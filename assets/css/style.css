@@ -1,9 +1,6 @@
 body {
   background: #252525; }
-  body.home {
-    /*  background:url(/assets/images/artwork_research_5.png) no-repeat;
-      background-size:100%;
-    */ }
+  body.home {}
 
 #main {
   background: white; }

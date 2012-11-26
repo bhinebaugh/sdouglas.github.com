@@ -201,8 +201,12 @@ nav ul {
   .background {
     display: none; }
 
-  #bottom {
-    width: 100%; } }
+  #footer #university {
+    float: left; }
+
+  #ucsf {
+    /* footer logo */
+    padding-right: 10px; } }
 @media (min-width: 1001px) {
   #bottom {
     position: absolute;

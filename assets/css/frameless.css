@@ -98,9 +98,16 @@ body:before {
 
 nav {
   padding-top: 20px; }
-
-nav ul {
-  margin-right: 20px; }
+  nav ul {
+    margin-right: 20px; }
+  nav select {
+    display: none;
+    margin: 0 50px;
+    padding: 0.2em;
+    min-width: 10em; }
+    nav select option:first-child {
+      font-weight: bold;
+      border-bottom: solid 1px; }
 
 #art {
   position: relative; }
@@ -206,6 +213,11 @@ nav ul {
     /* inherits width:100% from #main */ }
     #bottom #university {
       width: auto; } }
+@media (max-width: 750px) {
+  nav ul {
+    display: none; }
+  nav select {
+    display: block; } }
 @media (min-width: 1001px) {
   #bottom {
     position: absolute;

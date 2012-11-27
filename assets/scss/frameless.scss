@@ -91,8 +91,14 @@ body:before { content:""; height:100%; float:left; width:0; margin-top:-32767px;
 	    max-width:1050px;
 	 	position:relative; /* so that absolutely positioned child-elments are contained */
 }
-nav {padding-top:$gutter;}
-nav ul { margin-right: $gutter; }
+nav {
+	padding-top:$gutter;
+	ul { margin-right: $gutter; }
+	select { 
+		display:none; margin:0 50px; padding:0.2em; min-width:10em;
+		option:first-child { font-weight:bold; border-bottom:solid 1px; }
+	}
+}
 
 #art { position: relative; } /* contains and constrains backgrounds and main below nav */
 
@@ -188,6 +194,12 @@ nav ul { margin-right: $gutter; }
 	.background { display:none; }
 	#bottom{ /* inherits width:100% from #main */ 
 		#university { width:auto; }
+	}
+}
+@media (max-width: 750px) {
+	nav {
+		ul { display:none; }
+		select { display:block; }
 	}
 }
 

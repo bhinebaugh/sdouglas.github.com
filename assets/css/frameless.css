@@ -151,9 +151,10 @@ nav ul {
   #footer .column:last-child {
     margin-right: 0; }
 #footer #university {
-  width: 65%;
   height: 100px;
-  float: right; }
+  float: right;
+  margin-left: 1em;
+}
 #footer #ucsf {
   /* footer logo */
   background: url(/assets/images/ucsf.png) no-repeat;

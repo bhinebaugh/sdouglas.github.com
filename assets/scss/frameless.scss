@@ -149,13 +149,14 @@ nav ul { margin-right: $gutter; }
 	#university{
 		width:65%;
 		height:100px;
-		float:right;
+		float:left;
 	}
 	#ucsf{ /* footer logo */
 	  	background:url(/assets/images/ucsf.png) no-repeat;
 	  	background-size: 140px 70px;
 	  	width:140px;
 	  	height:100px;
+		margin-right:1em;
 	  	display:block;
 	  	opacity:.4;
 	  	float:left;
@@ -185,9 +186,8 @@ nav ul { margin-right: $gutter; }
 @media (max-width: 600px) {
 	#main { margin:0; width:100%; }
 	.background { display:none; }
-	#bottom{
-		width:100%;
-		
+	#bottom{ /* inherits width:100% from #main */ 
+		#university { width:auto; }
 	}
 }
 

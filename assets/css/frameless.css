@@ -151,16 +151,16 @@ nav ul {
   #footer .column:last-child {
     margin-right: 0; }
 #footer #university {
+  width: 65%;
   height: 100px;
-  float: right;
-  margin-left: 1em;
-}
+  float: left; }
 #footer #ucsf {
   /* footer logo */
   background: url(/assets/images/ucsf.png) no-repeat;
   background-size: 140px 70px;
   width: 140px;
   height: 100px;
+  margin-right: 1em;
   display: block;
   opacity: .4;
   float: left;
@@ -203,7 +203,9 @@ nav ul {
     display: none; }
 
   #bottom {
-    width: 100%; } }
+    /* inherits width:100% from #main */ }
+    #bottom #university {
+      width: auto; } }
 @media (min-width: 1001px) {
   #bottom {
     position: absolute;

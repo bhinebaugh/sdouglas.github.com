@@ -97,12 +97,12 @@ body:before {
   /* so that absolutely positioned child-elments are contained */ }
 
 nav {
-  padding-top: 20px; }
+  padding-top: 20px;
+  width: 100%; }
   nav ul {
     margin-right: 20px; }
   nav select {
     display: none;
-    margin: 0 50px;
     padding: 0.2em;
     min-width: 10em; }
     nav select option:first-child {
@@ -214,10 +214,14 @@ nav {
     #bottom #university {
       width: auto; } }
 @media (max-width: 750px) {
-  nav ul {
-    display: none; }
-  nav select {
-    display: block; } }
+  nav {
+    max-width: 600px; }
+    nav ul {
+      display: none; }
+    nav select {
+      display: block;
+      float: right;
+      margin-right: 50px; } }
 @media (min-width: 1001px) {
   #bottom {
     position: absolute;

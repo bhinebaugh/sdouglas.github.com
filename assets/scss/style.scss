@@ -79,6 +79,7 @@ nav {
  
   header {
     background: #00aef0;
+    overflow: hidden; /* for #logo at small widths */
     width: 100%;
   }
 }

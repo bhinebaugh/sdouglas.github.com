@@ -177,16 +177,15 @@ nav {
 @media (min-width: 760px)  { /* 18cols is 700, for tablet portrait at 768px */}
 @media (max-width: 1000px) { /* screen gets too narrow to fit the footer on the right of #main */}
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 	header { /* these need to be nested so the more specific css overrides previous properties */
 		#shawn { background-size:100%; height:65px; width:52px; }
-		#logo { height: 52px; margin: 8px 0 0 14px; }
-	}
-}
-@media (max-width: 500px) {
-	/* scale the header images */
-	header { /* these need to be nested so the more specific css overrides previous properties */
-		#logo { background-size:100%; width:68%; margin-left:5%; float:left; }
+		#logo { /* crop and scale to 75% */
+			height: 70px;
+			margin: -8px 0 0 14%;
+			width: 276px;
+			background-size: 100%;
+		}
 	}
 }
 
@@ -200,7 +199,7 @@ nav {
 		#university { width:auto; }
 	}
 }
-@media (max-width: 750px) {
+@media (max-width: 760px) {
 	nav {
 		max-width: 600px;
 		ul { display:none; }

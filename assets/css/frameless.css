@@ -182,6 +182,26 @@ nav {
   /* 18cols is 700, for tablet portrait at 768px */ }
 @media (max-width: 1000px) {
   /* screen gets too narrow to fit the footer on the right of #main */ }
+@media (max-width: 600px) {
+  #main {
+    margin: 0;
+    width: 100%; }
+
+  #left-background {
+    display: none; }
+
+  #right-background {
+    top: 130px;
+    left: 0;
+    width: 100%; }
+
+  #pane-content {
+    margin-top: 292px; }
+
+  #bottom {
+    /* inherits width:100% from #main */ }
+    #bottom #university {
+      width: auto; } }
 @media (max-width: 480px) {
   header {
     /* these need to be nested so the more specific css overrides previous properties */ }
@@ -194,20 +214,17 @@ nav {
       height: 70px;
       margin: -8px 0 0 14%;
       width: 276px;
-      background-size: 100%; } }
-@media (max-width: 600px) {
-  #main {
-    margin: 0;
-    width: 100%; }
+      background-size: 100%; }
 
-  .background {
-    display: none; }
+  #right-background {
+    top: 65px;
+    left: 0;
+    height: 200px; }
 
-  #bottom {
-    /* inherits width:100% from #main */ }
-    #bottom #university {
-      width: auto; } }
+  #pane-content {
+    margin-top: 192px; } }
 @media (max-width: 760px) {
+  /* nav graphics start to wrap to a second row below this width */
   nav {
     max-width: 600px; }
     nav ul {

@@ -97,10 +97,17 @@ body:before {
   /* so that absolutely positioned child-elments are contained */ }
 
 nav {
-  padding-top: 20px; }
-
-nav ul {
-  margin-right: 20px; }
+  padding-top: 20px;
+  width: 100%; }
+  nav ul {
+    margin-right: 20px; }
+  nav select {
+    display: none;
+    padding: 0.2em;
+    min-width: 10em; }
+    nav select option:first-child {
+      font-weight: bold;
+      border-bottom: solid 1px; }
 
 #art {
   position: relative; }
@@ -151,16 +158,16 @@ nav ul {
   #footer .column:last-child {
     margin-right: 0; }
 #footer #university {
+  width: 65%;
   height: 100px;
-  float: right;
-  margin-left: 1em;
-}
+  float: left; }
 #footer #ucsf {
   /* footer logo */
   background: url(/assets/images/ucsf.png) no-repeat;
   background-size: 140px 70px;
   width: 140px;
   height: 100px;
+  margin-right: 1em;
   display: block;
   opacity: .4;
   float: left;
@@ -175,7 +182,27 @@ nav ul {
   /* 18cols is 700, for tablet portrait at 768px */ }
 @media (max-width: 1000px) {
   /* screen gets too narrow to fit the footer on the right of #main */ }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+  #main {
+    margin: 0;
+    width: 100%; }
+
+  #left-background {
+    display: none; }
+
+  #right-background {
+    top: 130px;
+    left: 0;
+    width: 100%; }
+
+  #pane-content {
+    margin-top: 292px; }
+
+  #bottom {
+    /* inherits width:100% from #main */ }
+    #bottom #university {
+      width: auto; } }
+@media (max-width: 480px) {
   header {
     /* these need to be nested so the more specific css overrides previous properties */ }
     header #shawn {
@@ -183,31 +210,29 @@ nav ul {
       height: 65px;
       width: 52px; }
     header #logo {
-      height: 52px;
-      margin: 8px 0 0 14px; } }
-@media (max-width: 500px) {
-  /* scale the header images */
-  header {
-    /* these need to be nested so the more specific css overrides previous properties */ }
-    header #logo {
-      background-size: 100%;
-      width: 68%;
-      margin-left: 5%;
-      float: left; } }
-@media (max-width: 600px) {
-  #main {
-    margin: 0;
-    width: 100%; }
+      /* crop and scale to 75% */
+      height: 70px;
+      margin: -8px 0 0 14%;
+      width: 276px;
+      background-size: 100%; }
 
-  .background {
-    display: none; }
+  #right-background {
+    top: 65px;
+    left: 0;
+    height: 200px; }
 
-  #footer #university {
-    float: left; }
-
-  #ucsf {
-    /* footer logo */
-    padding-right: 10px; } }
+  #pane-content {
+    margin-top: 192px; } }
+@media (max-width: 760px) {
+  /* nav graphics start to wrap to a second row below this width */
+  nav {
+    max-width: 600px; }
+    nav ul {
+      display: none; }
+    nav select {
+      display: block;
+      float: right;
+      margin-right: 50px; } }
 @media (min-width: 1001px) {
   #bottom {
     position: absolute;

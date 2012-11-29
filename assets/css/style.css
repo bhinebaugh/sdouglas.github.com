@@ -120,16 +120,14 @@ header nav li {
 /* people page bios */
 .biographies .biography {
   margin: 0 0 20px;
-  height: 153px;
+  min-height: 153px;
   border-bottom: 1px dotted #ccc; }
   .biographies .biography .portrait {
     padding: 4px;
     border: 1px solid #eee;
     display: block;
     width: 120px;
-    height: 120px;
-    float: right;
-    margin: 0 0 20px 20px; }
+    height: 120px; }
   .biographies .biography:last-child {
     border: 0px; }
 .biographies h4 {

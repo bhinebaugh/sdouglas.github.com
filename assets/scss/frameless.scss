@@ -170,11 +170,18 @@ nav {
 	}
 }
 
+.biography .portrait { /* define these here so they can be overridden below for mobile widths */
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
 /* MEDIA QUERIES */
-@media (max-width: 339px ) { /* smart phones. 8col is 300px */}
-@media (max-width: 759px) { /* 11cols is 420, for smart phones landscape at 480px */}
-@media (min-width: 760px)  { /* 18cols is 700, for tablet portrait at 768px */}
-@media (max-width: 1000px) { /* screen gets too narrow to fit the footer on the right of #main */}
+@media (max-width: 395px ) {
+    div.biography .portrait {
+          float: none;
+          margin: 0 0 20px 0;
+    }
+}
 
 @media (max-width: 600px) {
 	#main { margin:0; width:100%; }

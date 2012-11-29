@@ -93,9 +93,10 @@ body:before { content:""; height:100%; float:left; width:0; margin-top:-32767px;
 }
 nav {
 	padding-top:$gutter;
-	width: 100%;  
+    padding-bottom: 17px;
+	width: 100%;
 	ul { margin-right: $gutter; }
-	select { 
+	select {
 		display:none; padding:0.2em; min-width:10em;
 		option:first-child { font-weight:bold; border-bottom:solid 1px; }
 	}
@@ -176,14 +177,22 @@ nav {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 395px ) {
-    div.biography .portrait {
-          float: none;
-          margin: 0 0 20px 0;
-    }
+@media (max-width: 760px) { /* nav graphics start to wrap to a second row below this width */
+	nav {
+		max-width: 600px;
+		ul { display:none; }
+		select { display:block; float:right; margin-right:50px; }
+	}
 }
 
-@media (max-width: 600px) {
+/* max-600px needs to appear before max-480px */
+@media (max-width: 600px) { /* content becomes full width and margins drop out */
+    #wrapper { padding-bottom: 0; }
+    nav {
+        padding-top:0;
+        padding-bottom: 10px;
+    }
+    nav select { margin-right: 5%; }
 	#main { margin:0; width:100%; }
 	#left-background { display:none; }
 	#right-background { top:130px; left:0; width:100%; }
@@ -212,12 +221,11 @@ nav {
 	#pane-content { margin-top: 192px; }
 }
 
-@media (max-width: 760px) { /* nav graphics start to wrap to a second row below this width */
-	nav {
-		max-width: 600px;
-		ul { display:none; }
-		select { display:block; float:right; margin-right:50px; }
-	}
+@media (max-width: 395px ) {
+    div.biography .portrait {
+          float: none;
+          margin: 0 0 20px 0;
+    }
 }
 
 @media (min-width: 1050px) {

@@ -4,24 +4,22 @@ body {
 #main {
   background: white; }
 
-nav {
-  padding-bottom: 17px; }
-  nav ul {
-    float: right; }
-  nav li {
-    float: left; }
-    nav li a {
-      display: block;
-      margin: 8px 0px 8px 26px;
-      padding: 0;
-      overflow: hidden;
-      height: 23px;
-      background-image: url("/assets/images/navigation.png");
-      background-color: transparent;
-      -webkit-transition: background 0.4s ease;
-      -moz-transition: background 0.4s ease;
-      -o-transition: background 0.4s ease;
-      transition: background 0.4s ease; }
+nav ul {
+  float: right; }
+nav li {
+  float: left; }
+  nav li a {
+    display: block;
+    margin: 8px 0px 8px 26px;
+    padding: 0;
+    overflow: hidden;
+    height: 23px;
+    background-image: url("/assets/images/navigation.png");
+    background-color: transparent;
+    -webkit-transition: background 0.4s ease;
+    -moz-transition: background 0.4s ease;
+    -o-transition: background 0.4s ease;
+    transition: background 0.4s ease; }
 
 #research-nav {
   background-position: 0 0;

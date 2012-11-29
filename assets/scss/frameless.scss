@@ -93,9 +93,10 @@ body:before { content:""; height:100%; float:left; width:0; margin-top:-32767px;
 }
 nav {
 	padding-top:$gutter;
-	width: 100%;  
+    padding-bottom: 17px;
+	width: 100%;
 	ul { margin-right: $gutter; }
-	select { 
+	select {
 		display:none; padding:0.2em; min-width:10em;
 		option:first-child { font-weight:bold; border-bottom:solid 1px; }
 	}
@@ -154,7 +155,6 @@ nav {
 		}
 	}
 	#university{
-		width:65%;
 		height:100px;
 		float:left;
 	}
@@ -171,16 +171,36 @@ nav {
 	}
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 339px ) { /* smart phones. 8col is 300px */}
-@media (max-width: 759px) { /* 11cols is 420, for smart phones landscape at 480px */}
-@media (min-width: 760px)  { /* 18cols is 700, for tablet portrait at 768px */}
-@media (max-width: 1000px) { /* screen gets too narrow to fit the footer on the right of #main */}
+.biography .portrait { /* define these here so they can be overridden below for mobile widths */
+    float: right;
+    margin: 0 0 20px 20px;
+}
 
-@media (max-width: 600px) {
+/* MEDIA QUERIES */
+@media (max-width: 760px) { /* nav graphics start to wrap to a second row below this width */
+	nav {
+		max-width: 600px;
+		ul { display:none; }
+		select { display:block; float:right; margin-right:50px; }
+	}
+}
+
+/* max-600px needs to appear before max-480px */
+@media (max-width: 600px) { /* content becomes full width and margins drop out */
+    #wrapper { padding-bottom: 0; }
+    nav {
+        padding-top:0;
+        padding-bottom: 10px;
+    }
+    nav select { margin-right: 5%; }
 	#main { margin:0; width:100%; }
 	#left-background { display:none; }
 	#right-background { top:130px; left:0; width:100%; }
+	#pane header {
+        -moz-box-shadow: 0 0 10px 0px #333;
+        -webkit-box-shadow: 0 0 10px 0px #333;
+        box-shadow: 0 0 10px 0px #333;
+    }
 	#pane-content { margin-top: 292px; }
 	#bottom{ /* inherits width:100% from #main */ 
 		#university { width:auto; }
@@ -201,16 +221,15 @@ nav {
 	#pane-content { margin-top: 192px; }
 }
 
-@media (max-width: 760px) { /* nav graphics start to wrap to a second row below this width */
-	nav {
-		max-width: 600px;
-		ul { display:none; }
-		select { display:block; float:right; margin-right:50px; }
-	}
+@media (max-width: 395px ) {
+    div.biography .portrait {
+          float: none;
+          margin: 0 0 20px 0;
+    }
 }
 
-@media (min-width: 1001px) {
-	#bottom { 
+@media (min-width: 1050px) {
+	#bottom {
 		position:absolute;
 		@include width(12);
 		background:none;

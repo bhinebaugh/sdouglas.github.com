@@ -187,6 +187,11 @@ nav {
 	#main { margin:0; width:100%; }
 	#left-background { display:none; }
 	#right-background { top:130px; left:0; width:100%; }
+	#pane header {
+        -moz-box-shadow: 0 0 10px 0px #333;
+        -webkit-box-shadow: 0 0 10px 0px #333;
+        box-shadow: 0 0 10px 0px #333;
+    }
 	#pane-content { margin-top: 292px; }
 	#bottom{ /* inherits width:100% from #main */ 
 		#university { width:auto; }

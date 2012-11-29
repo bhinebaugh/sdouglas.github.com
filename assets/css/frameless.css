@@ -158,7 +158,6 @@ nav {
   #footer .column:last-child {
     margin-right: 0; }
 #footer #university {
-  width: 65%;
   height: 100px;
   float: left; }
 #footer #ucsf {
@@ -174,7 +173,7 @@ nav {
   z-index: 15; }
 
 /* MEDIA QUERIES */
-@media (max-width: 339px ) {
+@media (max-width: 339px) {
   /* smart phones. 8col is 300px */ }
 @media (max-width: 759px) {
   /* 11cols is 420, for smart phones landscape at 480px */ }
@@ -233,7 +232,7 @@ nav {
       display: block;
       float: right;
       margin-right: 50px; } }
-@media (min-width: 1001px) {
+@media (min-width: 1050px) {
   #bottom {
     position: absolute;
     width: 460px;
@@ -242,7 +241,7 @@ nav {
     top: 325px; }
     #bottom #ucsf {
       opacity: .15; } }
-@media (min-width: 1200px ) {
+@media (min-width: 1200px) {
   /***  scaled 75%  ***/
   #wrapper {
     max-width: 1325px; }
@@ -317,7 +316,7 @@ nav {
     top: 635px; } }
 @media (min-width: 1420px) {
   /* standard large desktop 1410px */ }
-@media (min-width: 1600px ) {
+@media (min-width: 1600px) {
   /* extra large monitor = full size artwork and content */
   #wrapper {
     max-width: 1600px;

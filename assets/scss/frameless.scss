@@ -154,7 +154,6 @@ nav {
 		}
 	}
 	#university{
-		width:65%;
 		height:100px;
 		float:left;
 	}
@@ -209,8 +208,8 @@ nav {
 	}
 }
 
-@media (min-width: 1001px) {
-	#bottom { 
+@media (min-width: 1050px) {
+	#bottom {
 		position:absolute;
 		@include width(12);
 		background:none;

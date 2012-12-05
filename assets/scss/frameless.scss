@@ -203,6 +203,8 @@ nav {
     }
 	#pane-content { margin-top: 292px; }
 	#bottom{ /* inherits width:100% from #main */ 
+		padding-left:15px;
+		padding-right:5px;
 		#university { width:auto; }
 	}
 }
